@@ -24,14 +24,22 @@ Implements a search as you type feature
 
 If api call takes some time, user will be presented with a loading animation.
 ![image](https://user-images.githubusercontent.com/67632151/163730777-4fe8e8e0-f8a9-4474-a5c3-c24fb23e72a6.png)
-
-Max 20 results per page. Has next and previous buttons.
-![image](https://user-images.githubusercontent.com/67632151/163730693-a0ef88b5-dd39-4a75-ac47-b5157c0fcedc.png)
+<br/><br/>
+Max 20 results per page.
+![image](https://user-images.githubusercontent.com/67632151/163730871-0b10ca68-90fc-400f-8a1b-4c523f4fe0ef.png)
+<br/><br/><br/>
+ Has next and previous buttons.
+ <br/><br/><br/>
+![image](https://user-images.githubusercontent.com/67632151/163730893-4c80fb9a-83ee-45ce-a6b6-aba1d00898f3.png)
 
 # Album Page
 If an artist card is pressed, we are redirected to an album page where all his albums are displayed.
 ![image](https://user-images.githubusercontent.com/67632151/163730712-44d891ba-bcf3-4425-a9ac-7bc104b36e18.png)
 
+<br/><br/>
+
 Similarly, it accomodates max 20 results per page and has next and previous buttons.
+<br/><br/>
+
 ![image](https://user-images.githubusercontent.com/67632151/163730753-dc914417-f84b-49f8-9b77-36d3da362b2b.png)
 
