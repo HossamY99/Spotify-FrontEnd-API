@@ -78,7 +78,7 @@ function App() {
       <div>
       <div className='albumsHeader'>
        <h1> {CurrentArtistName} </h1>
-       <p class="subtext">Albums</p>
+       <p className='subtext'>Albums</p>
       </div>
 
       <div>
