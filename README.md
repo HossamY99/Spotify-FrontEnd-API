@@ -9,6 +9,9 @@ Open Command Prompt:
 1. First install react router using: "npm install --save react-router".
 2. Then "npm start".
 
+# Time Spent
+6-7 hours (Not in one sitting)
+
 # Webpages
 # Login page
 This will redirect you to spotify login using the implicit grant flow.
