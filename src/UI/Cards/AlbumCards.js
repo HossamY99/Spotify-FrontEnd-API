@@ -26,7 +26,7 @@ export const AlbumExportData= (props)=> {
     );
     }
     else{
-        return (null)
+        return (<div><h1>nulll</h1> </div>)
     }        
 };
 

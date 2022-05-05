@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 
-
 *,
 *::before,
 *::after {
@@ -15,8 +14,8 @@ body {
 }
 
 i {
-    font-family: FontAwesome;
-  }
+  font-family: FontAwesome;
+}
 
 .wrapper {
   display: grid;
@@ -39,34 +38,33 @@ i {
   position: relative;
 }
 
-.card p{
-  color: hsl(229, 6%, 66%); 
+.card p {
+  color: hsl(229, 6%, 66%);
 }
 
-.Partist{
+.Partist {
   color: hsl(229, 6%, 66%);
-  font-size: 14px; 
+  font-size: 14px;
   flex-direction: row;
   margin-left: 10%;
   margin-top: -5%;
 }
-.bt{
-  position:absolute;
-  bottom:11%;
-  left:4%;
+.bt {
+  position: absolute;
+  bottom: 11%;
+  left: 4%;
 }
 
-.separate{
+.separate {
   position: relative;
   margin-bottom: 50px;
 }
-.moreinfo{
-  margin-top:10px;
+.moreinfo {
+  margin-top: 10px;
   margin-bottom: auto;
   margin-top: auto;
   margin-left: 10px;
 }
-
 
 .card__image {
   height: 18rem;
@@ -86,7 +84,7 @@ i {
   font-family: inherit;
   font-weight: bold;
   font-size: 1rem;
-  width:100%;
+  width: 100%;
   border-top: 2px solid #d50000;
 
   color: #d50000;
@@ -95,12 +93,12 @@ i {
 }
 
 a:link {
-    margin-left: 12%;
-    text-decoration: none;
-  }
-a:link:hover{
+  margin-left: 12%;
+  text-decoration: none;
+}
+a:link:hover {
   text-decoration: underline;
-}  
+}
 .card:hover {
   transform: scale(1.02);
 }
@@ -109,37 +107,40 @@ a:link:hover{
 }
 
 .checked {
-    margin-left: 10 px; 
-    color: orange;
-  }
-
-.gray{
-    color: gray;
+  margin-left: 10 px;
+  color: orange;
 }
 
-.rating{
-    margin-left: 15px;
-    margin-top: 5px;
+.gray {
+  color: gray;
 }
 
+.rating {
+  margin-left: 15px;
+  margin-top: 5px;
+}
 
 .loader {
-    border-top: 16px solid blue;
-    border-right: 16px solid green;
-    border-bottom: 16px solid red;
-    border-left: 16px solid pink;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
-    margin-top: 20px;
-    position: fixed;
-    top: 50%;
-    left: 45%;
-    transform: translate(-50%, -50%);
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  border-left: 16px solid pink;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin-top: 20px;
+  position: fixed;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+  100% {
+    transform: rotate(360deg);
   }
+}

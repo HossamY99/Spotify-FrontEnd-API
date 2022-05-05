@@ -1,0 +1,18 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Lucida Grande';
+
+}
+
+
+.spotheader {
+    margin: -3% -3% -4%;
+    padding: 25px;
+    text-align: left;
+    background: lightgray;
+    color: black;
+    border-bottom: 2px black;
+    border-bottom-style:solid;
+    
+    font-size: 25px;
+  }
