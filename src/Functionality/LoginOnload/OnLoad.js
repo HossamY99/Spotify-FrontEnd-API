@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 
-export function login() {
+export function login_P() {
   var client_id = "e0edfae095bf44b399edb93af13f80a9";
   var redirect_uri = "http://localhost:3000/authorized/";
   var state = "abc";
@@ -16,12 +16,12 @@ export function login() {
   window.location = url + "/url";
 }
 
-export const TokenLoad = () => {
+export const Token_Load = () => {
   let [token, settoken] = useState([localStorage.getItem("accessToken")]);
   useEffect(() => {
     if (window.location.hash) {
       const { access_token, expires_in, token_type } =
-        getReturnedParamsFromSpotifyAuth(window.location.hash);
+        get_ReturnedParamsFromSpotifyAuth(window.location.hash);
       localStorage.clear();
       localStorage.setItem("accessToken", access_token);
       // if (token=="" || token==undefined || token==null){console.log("I am empty"); settoken(access_token);}
@@ -32,10 +32,10 @@ export const TokenLoad = () => {
   });
 };
 
-export function getTokenFromUrl() {
+export function get_Token_From_Url() {
   if (window.location.hash) {
     const { access_token, expires_in, token_type } =
-      getReturnedParamsFromSpotifyAuth(window.location.hash);
+      get_ReturnedParamsFromSpotifyAuth(window.location.hash);
     localStorage.clear();
     localStorage.setItem("accessToken", access_token);
     localStorage.setItem("tokenType", token_type);
@@ -46,7 +46,7 @@ export function getTokenFromUrl() {
   }
 }
 
-export const getReturnedParamsFromSpotifyAuth = (hash) => {
+export const get_ReturnedParamsFromSpotifyAuth = (hash) => {
   const stringAfterHashtag = hash.substring(1);
   const paramsInUrl = stringAfterHashtag.split("&");
   const paramsSplitUp = paramsInUrl.reduce((accumulater, currentValue) => {

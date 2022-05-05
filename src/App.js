@@ -1,8 +1,8 @@
 import React from "react";
-import { buttonlogin } from "./UI/LoginButton/ButtonLogin";
+import { Buttonlogin } from "./UI/LoginButton/ButtonLogin";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { ArtistAndAlbum } from "./Functionality/ArtistAlbumRoutes";
+import { Artist_Album } from "./Functionality/ArtistAlbumRoutes";
 import { SpotHeader } from "./UI/Header/Header";
 
 function App() {
@@ -11,8 +11,8 @@ function App() {
       <SpotHeader />
       <div className="App">
         <Routes>
-          <Route exact path="/" element={buttonlogin()}></Route>
-          <Route exact path="/authorized*" element={ArtistAndAlbum()}></Route>
+          <Route exact path="/" element={Buttonlogin()}></Route>
+          <Route exact path="/authorized*" element={Artist_Album()}></Route>
         </Routes>
       </div>
     </>

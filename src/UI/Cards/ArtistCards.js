@@ -4,7 +4,7 @@ import React, { useState, useEffect, useCallback } from "react";
 var NoimageLink =
   "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png";
 
-export const ShowArtistData = (props) => {
+export const Show_Artist_Data = (props) => {
   if (props.ArtistData != null) {
     return (
       <>

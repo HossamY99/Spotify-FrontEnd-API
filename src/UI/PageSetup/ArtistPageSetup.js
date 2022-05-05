@@ -1,15 +1,15 @@
-import { ShowArtistData } from "../Cards/ArtistCards";
+import { Show_Artist_Data } from "../Cards/ArtistCards";
 import { Searchbar } from "../SearchBar/SearchBar";
 import "./PageSetup.css";
 
-export const artistPage = (
+export const ArtistPage = (
   ArtistName,
   setArtistName,
   Artists,
   Loadingg,
-  getPrevArtists,
-  getNextArtists,
-  GetAlbums,
+  get_Prev_Artists,
+  get_Next_Artists,
+  Get_Albums,
   NoResults
 ) => {
   return (
@@ -18,7 +18,7 @@ export const artistPage = (
 
       <div>
         {Loadingg === false ? (
-          <ShowArtistData ArtistData={Artists} getalbums={GetAlbums} />
+          <Show_Artist_Data ArtistData={Artists} getalbums={Get_Albums} />
         ) : (
           <div className="loader"></div>
         )}
@@ -32,12 +32,12 @@ export const artistPage = (
             <button
               color="inherit"
               className="previous"
-              onClick={getPrevArtists}
+              onClick={get_Prev_Artists}
             >
               {" "}
               Previous{" "}
             </button>
-            <button color="inherit" className="next" onClick={getNextArtists}>
+            <button color="inherit" className="next" onClick={get_Next_Artists}>
               {" "}
               Next{" "}
             </button>

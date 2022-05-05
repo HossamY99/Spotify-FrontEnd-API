@@ -1,20 +1,20 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
-import { getTokenFromUrl } from "../LoginOnload/OnLoad";
+import { get_Token_From_Url } from "../LoginOnload/OnLoad";
 
-export const ArtistCode = () => {
+export const Artist_Code = () => {
   let [ArtistName, setArtistName] = useState("");
   let [Artists, setArtists] = useState([]);
   let [NoResults, setNoResults] = useState("");
   let [Loadingg, setLoadingg] = useState(false);
   let [Offset, setOffset] = useState(0);
-  let [token, settoken] = useState(loadthetoken);
+  let [token, settoken] = useState(load_the_token);
 
-  function loadthetoken() {
+  function load_the_token() {
     if (
       localStorage.getItem("accessToken") == "" ||
       localStorage.getItem("accessToken") == null
     )
-      return getTokenFromUrl();
+      return get_Token_From_Url();
     else return localStorage.getItem("accessToken");
   }
 
@@ -23,17 +23,17 @@ export const ArtistCode = () => {
 
   oldText.current = ArtistName;
   function multiple() {
-    if (ArtistName != "" && ArtistName.length % 4 == 0) getArtists();
-    else stoppedtyping();
+    if (ArtistName != "" && ArtistName.length % 4 == 0) get_Artists();
+    else stopped_typing();
   }
 
-  function stoppedtyping() {
+  function stopped_typing() {
     setTimeout(function () {
-      if (oldText.current == ArtistName && ArtistName != "") getArtists();
+      if (oldText.current == ArtistName && ArtistName != "") get_Artists();
     }, 2000);
   }
 
-  function getArtists(offset) {
+  function get_Artists(offset) {
     if (offset === undefined) {
       offset = 0;
     }
@@ -74,20 +74,20 @@ export const ArtistCode = () => {
     }
   }
 
-  function getNextArtists() {
+  function get_Next_Artists() {
     if (Artists.length < 20) {
       alert("No more results");
     } else {
-      getArtists(Offset + 10);
+      get_Artists(Offset + 10);
       setOffset(Offset + 10);
     }
   }
 
-  function getPrevArtists() {
+  function get_Prev_Artists() {
     if (Offset === 0) {
       alert("No Previous Pages");
     } else {
-      getArtists(Offset - 10);
+      get_Artists(Offset - 10);
       setOffset(Offset - 10);
     }
   }
@@ -97,8 +97,8 @@ export const ArtistCode = () => {
     setArtistName,
     Artists,
     Loadingg,
-    getPrevArtists,
-    getNextArtists,
+    get_Prev_Artists,
+    get_Next_Artists,
     NoResults,
   };
 };

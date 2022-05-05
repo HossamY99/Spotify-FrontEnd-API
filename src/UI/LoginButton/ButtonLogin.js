@@ -1,13 +1,13 @@
 import "./Button.css";
-import { login } from "../../Functionality/LoginOnload/OnLoad";
+import { login_P } from "../../Functionality/LoginOnload/OnLoad";
 
-export const buttonlogin = () => {
+export const Buttonlogin = () => {
   return (
     <button
       color="inherit"
       className="loginbutton"
       onClick={() => {
-        login();
+        login_P();
       }}
     >
       <div class="buttonwrapper">

@@ -1,7 +1,7 @@
 import { AlbumExportData } from "../Cards/AlbumCards";
 import "./PageSetup.css";
 
-export const albumPage = (
+export const AlbumPage = (
   LoadinggAlbum,
   albumss,
   CurrentArtistName,
@@ -23,7 +23,7 @@ export const albumPage = (
         )}
       </div>
 
-      {albumss == undefined || albumss?.length === 0 ? null : (
+      {(albumss == undefined || albumss?.length === 0 || LoadinggAlbum==true) ? null : (
         <div>
           <br></br>
           <br></br>
