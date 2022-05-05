@@ -12,10 +12,10 @@ export const ArtistPage = (
   Get_Albums,
   NoResults
 ) => {
+
   return (
     <>
       <Searchbar ArtistName={ArtistName} setArtistName={setArtistName} />
-
       <div>
         {Loadingg === false ? (
           <Show_Artist_Data ArtistData={Artists} getalbums={Get_Albums} />
@@ -25,7 +25,7 @@ export const ArtistPage = (
       </div>
       <h1 className="Noresults">{NoResults}</h1>
       <div>
-        {Artists.length === 0 ? null : (
+        {(Artists.length === 0 || Loadingg===true) ? null : (
           <div>
             <br></br>
             <br></br>
